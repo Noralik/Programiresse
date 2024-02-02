@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="opilane"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 10:58:25 AM"/>
+        <attribute name="created" value="b3BpbGFuZTtIUC1DWkMzMjE3MDY5OzIwMjMtMTEtMTY7MTA6MjM6NTEgQU07Mjc4Ng=="/>
+        <attribute name="edited" value="b3BpbGFuZTtIUC1DWkMzMjE3MDY5OzIwMjMtMTEtMTY7MTI6MTY6NTMgUE07MjsyOTE2"/>
+        <attribute name="edited" value="b3BpbGFuZTtIUC1DWkMzMjE3MDVOOzIwMjMtMTEtMjM7MTA6NTg6MjUgQU07MjsyOTIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1, number2, number3, max" type="Integer" array="False" size=""/>
+            <output expression="&quot;first number&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Second number&quot;" newline="True"/>
+            <input variable="number2"/>
+            <output expression="&quot;Third Number&quot;" newline="True"/>
+            <input variable="Number3"/>
+            <assign variable="max" expression="number1"/>
+            <if expression="number2&gt;=max">
+                <then>
+                    <assign variable="max" expression="number2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="number3&gt;=max">
+                <then>
+                    <assign variable="max" expression="number3"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;max =&quot; &amp; max &amp; &quot; from&quot; &amp; &quot; number1 &quot; &amp; &quot;,&quot; &amp;  number2 &amp; &quot; and &quot; &amp;  number3 &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

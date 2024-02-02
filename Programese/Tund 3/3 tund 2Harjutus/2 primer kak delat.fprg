@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="opilane"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 12:31:09 PM"/>
+        <attribute name="created" value="b3BpbGFuZTtIUC1DWkMzMjE3MDY5OzIwMjMtMTEtMTY7MTA6MjM6NTEgQU07Mjc4Ng=="/>
+        <attribute name="edited" value="b3BpbGFuZTtIUC1DWkMzMjE3MDY5OzIwMjMtMTEtMTY7MTI6MTY6NTMgUE07MjsyOTE2"/>
+        <attribute name="edited" value="b3BpbGFuZTtIUC1DWkMzMjE3MDVOOzIwMjMtMTEtMjM7MTI6MzE6MDkgUE07NjsyOTM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, max, maxnum, counter" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many numbers?&quot;" newline="True"/>
+            <input variable="maxnum"/>
+            <output expression="&quot;First number --&gt;&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="max" expression="num"/>
+            <assign variable="counter" expression="2"/>
+            <while expression="counter&lt;=maxnum">
+                <output expression="&quot;next number -&gt;&quot;" newline="True"/>
+                <input variable="Num"/>
+                <if expression="num&gt;max">
+                    <then>
+                        <assign variable="max" expression="num"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="counter" expression="counter+1"/>
+            </while>
+            <output expression="&quot;max =&quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
