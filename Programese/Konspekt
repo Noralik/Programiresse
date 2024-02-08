@@ -35,3 +35,76 @@ print(A) #принт ААААААААА
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
+# # comprehesive list
+D = [i*3 for i in range (0, 11)]
+##print(D)
+# F=[0]*5
+# for i in D:
+#     if D[i]%2==0:
+#         F[i]=0
+#     else:
+#         D[i]=F[i]
+# 
+# print(D)
+# print(F)
+
+F1=[0 if i%2==0 else i for i in D]
+print(F1)
+
+F2=[i if i%2==0 else 0 for i in D]
+print(F2)
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||A = []
+for i in range (0,5):
+    A.append(i)
+#     A.append(i+1)
+#     A.append(i-1)
+
+print(A)
+
+A = []
+for i in range (0,5): # элементов 5
+    A.append(i+1) # каждый элемент +1
+    A.append("privet") # пишет после каждого элемента привет
+A.append(6) #вышли из цикла "- tab." 
+
+print(A) #принт ААААААААА
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+def search_array(A:list, x:int):
+    """Searching for number x in list A
+    """
+    pass
+    N=len(A)
+    for i in range (N):
+        if A[i]==x:
+            return i
+    return -1
+
+def test_search_array():
+    A1 = [5,7,4,2]
+    m = search_array(A1, 7)
+    if m==1:
+        print("test1 - OK!")
+    else:
+        print("test1 - Fail!")
+        
+    A2=[-5, -7, -6, -9]
+    m = search_array(A2, -6)
+    if m==2:
+        print("test2 - Ok!")
+    else:
+        print("test2 - Fail!")
+        
+    A3=[23, 17, 10, 15, 25, 10]
+    m = search_array(A3, 10)
+    if m==2:
+        print("test3 - Ok!")
+    else:
+        print("test3 - Fail!")
+        
+test_search_array()
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
