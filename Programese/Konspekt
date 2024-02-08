@@ -108,3 +108,15 @@ test_search_array()
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
+def factorize(x):
+    """factorizing integer number x
+    """
+    divisor=2
+    while x>1:
+        if x%divisor==0:
+            print(divisor)
+            x=x//divisor
+        else:
+            divisor = divisor + 1
+
+factorize(106)
